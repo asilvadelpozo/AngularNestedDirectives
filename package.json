@@ -1,0 +1,22 @@
+{
+  "name": "AngularNestedDirectives",
+  "version": "1.0.0",
+  "description": "Playground for nesting angular directives",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "as"
+  },
+  "author": "Antonio Silva del Pozo <asilvadelpozo@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.4.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-webserver": "^0.9.1"
+  }
+}

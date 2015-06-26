@@ -1,0 +1,40 @@
+.container {
+    font-size: 1rem;
+    font-family: sans-serif;
+    width: 15em;
+    padding: 1em;
+    margin: 1em auto;
+    background-color: #888888;
+    border-radius: 0.5em;
+}
+
+.element1 {
+    font-size: 1rem;
+    padding: 1em;
+    background-color: #dedede;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+.element2 {
+    font-size: 1rem;
+    padding: 1em;
+    background-color: #cacaca;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+.element3 {
+    font-size: 1rem;
+    padding: 1em;
+    background-color: #ababab;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+.random {
+    padding: 0 1em 1em 1em;
+    text-align: center;
+}
