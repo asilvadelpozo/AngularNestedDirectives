@@ -4,9 +4,6 @@ angular.module('app').
             restrict: 'E',
             replace: true,
             transclude: true,
-            scope: {
-                index: '=index'
-            },
             templateUrl: 'templates/container.html'
         };
     });
