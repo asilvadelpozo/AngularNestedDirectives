@@ -17,8 +17,8 @@ This project tries to solve this problem by the use of an AngularJS controller (
 
 Steps:
 
-1. Use transcludeOrderController.js as a template for your controller. You should only change the module name and use yours.
-1. Create some *nested directive* that you can use inside the *wrapper*. For example:
+* Use transcludeOrderController.js as a template for your controller. You should only change the module name and use yours.
+* Create some *nested directive* that you can use inside the *wrapper*. For example:
 ```javascript
 angular.module('transcludeOrderedApp').
      directive('nested', function() {
@@ -32,13 +32,13 @@ angular.module('transcludeOrderedApp').
         };
      });
 ```
-   And its template could be:
+And its template could be:
 ```html
 <section class="nested">
      nested
 </section>
 ```
-1. Create a custom *wrapper directive* that use your new controller. For example:
+* Create a custom *wrapper directive* that use your new controller. For example:
 ```javascript
 angular.module('transcludeOrderedApp').
      directive('wrapper', function() {
@@ -54,7 +54,7 @@ angular.module('transcludeOrderedApp').
          };
      });
 ```
-   And its template could be:
+And its template could be:
 ```html
 <div class="wrapper">
      <div data-transclude-order="1"></div>
@@ -62,7 +62,7 @@ angular.module('transcludeOrderedApp').
      <div data-transclude-order="3"></div>
 </div>
 ```
-1. Use both *nested* and *wrapper* on your html code. For example:
+* Use both *nested* and *wrapper* on your html code. For example:
 ```html
 <wrapper>
      <nested data-order="1"></nested>
