@@ -1,10 +1,10 @@
 angular.module('transcludeOrderedApp').
-    directive('orderedContainer', function() {
+    directive('wrapper', function() {
         return {
             restrict: 'E',
             replace: true,
             transclude: true,
-            templateUrl: 'templates/orderedContainer.html',
+            templateUrl: 'templates/wrapper.html',
             controller: 'transcludeOrderCtrl',
             link: function(scope, element) {
                 scope.link(element);

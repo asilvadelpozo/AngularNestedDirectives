@@ -4,7 +4,7 @@ body {
     text-align: center;
 }
 
-.container {
+.wrapper {
     font-size: 1rem;
     width: 15em;
     padding: 1em;
@@ -13,7 +13,7 @@ body {
     border-radius: 0.5em;
 }
 
-.element1 {
+.nested1 {
     font-size: 1rem;
     padding: 1em;
     background-color: #dedede;
@@ -22,7 +22,7 @@ body {
     text-align: center;
 }
 
-.element2 {
+.nested2 {
     font-size: 1rem;
     padding: 1em;
     background-color: #cacaca;
@@ -31,7 +31,7 @@ body {
     text-align: center;
 }
 
-.element3 {
+.nested3 {
     font-size: 1rem;
     padding: 1em;
     background-color: #ababab;

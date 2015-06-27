@@ -1,9 +1,9 @@
 angular.module('transcludeOrderedApp').
-    directive('container', function() {
+    directive('normalWrapper', function() {
         return {
             restrict: 'E',
             replace: true,
             transclude: true,
-            templateUrl: 'templates/container.html'
+            templateUrl: 'templates/normalWrapper.html'
         };
     });

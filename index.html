@@ -8,57 +8,57 @@
 <body>
 
 Normal transclude directive example (unable to be ordered)
-<container>
-    <element data-content="1"></element>
-    <element data-content="2"></element>
-    <element data-content="3"></element>
-</container>
+<normal-wrapper>
+    <nested data-content="1"></nested>
+    <nested data-content="2"></nested>
+    <nested data-content="3"></nested>
+</normal-wrapper>
 
 Ordered transclude directive examples
-<ordered-container>
-    <element data-content="1" data-order="1"></element>
-    <element data-content="2" data-order="2"></element>
-    <element data-content="3" data-order="3"></element>
-</ordered-container>
+<wrapper>
+    <nested data-content="1" data-order="1"></nested>
+    <nested data-content="2" data-order="2"></nested>
+    <nested data-content="3" data-order="3"></nested>
+</wrapper>
 
-<ordered-container>
-    <element data-content="1" data-order="2"></element>
-    <element data-content="2" data-order="3"></element>
-    <element data-content="3" data-order="1"></element>
-</ordered-container>
+<wrapper>
+    <nested data-content="1" data-order="2"></nested>
+    <nested data-content="2" data-order="3"></nested>
+    <nested data-content="3" data-order="1"></nested>
+</wrapper>
 
 Ordered transclude directive example with missing elements (missing elements e.g. 3 are simply ignored)
-<ordered-container>
-    <element data-content="1" data-order="1"></element>
-    <element data-content="2" data-order="2"></element>
-</ordered-container>
+<wrapper>
+    <nested data-content="1" data-order="1"></nested>
+    <nested data-content="2" data-order="2"></nested>
+</wrapper>
 
 Ordered transclude directive example with extra elements (extra elements e.g. 4 are simply ignored)
-<ordered-container>
-    <element data-content="1" data-order="1"></element>
-    <element data-content="2" data-order="2"></element>
-    <element data-content="3" data-order="3"></element>
-    <element data-content="4" data-order="4"></element>
-</ordered-container>
+<wrapper>
+    <nested data-content="1" data-order="1"></nested>
+    <nested data-content="2" data-order="2"></nested>
+    <nested data-content="3" data-order="3"></nested>
+    <nested data-content="4" data-order="4"></nested>
+</wrapper>
 
 Another ordered transclude directive examples (reusing transcludeOrderController)
-<ordered-container2>
-    <element data-content="1" data-order="1"></element>
-    <element data-content="2" data-order="2"></element>
-</ordered-container2>
+<wrapper2>
+    <nested data-content="1" data-order="1"></nested>
+    <nested data-content="2" data-order="2"></nested>
+</wrapper2>
 
-<ordered-container2>
-    <element data-content="1" data-order="2"></element>
-    <element data-content="3" data-order="1"></element>
-</ordered-container2>
+<wrapper2>
+    <nested data-content="1" data-order="2"></nested>
+    <nested data-content="3" data-order="1"></nested>
+</wrapper2>
 
 <script src="node_modules/angular/angular.js"></script>
 <script src="js/transcludeOrderedApp.js"></script>
 <script src="js/controllers/transcludeOrderController.js"></script>
-<script src="js/directives/element.js"></script>
-<script src="js/directives/container.js"></script>
-<script src="js/directives/orderedContainer.js"></script>
-<script src="js/directives/orderedContainer2.js"></script>
+<script src="js/directives/nested.js"></script>
+<script src="js/directives/normalWrapper.js"></script>
+<script src="js/directives/wrapper.js"></script>
+<script src="js/directives/wrapper2.js"></script>
 
 </body>
 </html>
