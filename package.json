@@ -1,7 +1,7 @@
 {
-  "name": "AngularNestedDirectives",
+  "name": "multiple-transclude-angular-nested-directives",
   "version": "1.0.0",
-  "description": "Playground for nesting angular directives",
+  "description": "Library for allowing multiple transclusion in nested AngularJS directives.",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
