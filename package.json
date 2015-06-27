@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "as"
+    "url": "https://github.com/asilvadelpozo/Multiple-Transclude-Angular-Nested-Directives.git"
   },
   "author": "Antonio Silva del Pozo <asilvadelpozo@gmail.com>",
   "license": "MIT",
