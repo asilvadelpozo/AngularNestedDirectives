@@ -19,7 +19,8 @@ Steps:
 
 1. Use transcludeOrderController.js as a template for your controller. You should only change the module name and use yours.
 1. Create some *nested directive* that you can use inside the *wrapper*. For example:
-`angular.module('transcludeOrderedApp').
+```javascript
+angular.module('transcludeOrderedApp').
      directive('nested', function() {
         return {
             restrict: 'E',
@@ -29,13 +30,17 @@ Steps:
             },
             templateUrl: 'templates/nested.html'
         };
-     });`
+     });
+```
    And its template could be:
-`<section class="nested">
+```html
+<section class="nested">
      nested
- </section>`
+</section>
+```
 1. Create a custom *wrapper directive* that use your new controller. For example:
-`angular.module('transcludeOrderedApp').
+```javascript
+angular.module('transcludeOrderedApp').
      directive('wrapper', function() {
          return {
              restrict: 'E',
@@ -47,19 +52,24 @@ Steps:
                  scope.link(element);
              }
          };
-     });`
+     });
+```
    And its template could be:
-`<div class="wrapper">
+```html
+<div class="wrapper">
      <div data-transclude-order="1"></div>
      <div data-transclude-order="2"></div>
      <div data-transclude-order="3"></div>
- </div>`
+</div>
+```
 1. Use both *nested* and *wrapper* on your html code. For example:
-`<wrapper>
+```html
+<wrapper>
      <nested data-order="1"></nested>
      <nested data-order="2"></nested>
      <nested data-order="3"></nested>
- </wrapper>`
+</wrapper>
+```
 
 ## Workspace Setup
 
@@ -67,7 +77,7 @@ run:
 
 `sudo npm install`
 
-# Start Example Application
+## Start Example Application
 
 run:
 
