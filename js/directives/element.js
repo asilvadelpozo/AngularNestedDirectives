@@ -1,10 +1,10 @@
-angular.module('app').
+angular.module('transcludeOrderedApp').
     directive('element', function() {
        return {
            restrict: 'E',
            replace: true,
            scope: {
-               index: '=index'
+               content: '=content'
            },
            templateUrl: 'templates/element.html'
        };

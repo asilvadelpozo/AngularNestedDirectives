@@ -1,4 +1,4 @@
-angular.module('app').
+angular.module('transcludeOrderedApp').
     directive('container', function() {
         return {
             restrict: 'E',

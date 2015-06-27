@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-ng-app="app">
+<html lang="en" data-ng-app="transcludeOrderedApp">
 <head>
     <meta charset="UTF-8">
     <title>Angular Nested Directives</title>
@@ -7,16 +7,58 @@
 </head>
 <body>
 
+Normal transclude directive example (unable to be ordered)
 <container>
-    <element data-index="1"></element>
-    <element data-index="2"></element>
-    <element data-index="3"></element>
+    <element data-content="1"></element>
+    <element data-content="2"></element>
+    <element data-content="3"></element>
 </container>
 
+Ordered transclude directive examples
+<ordered-container>
+    <element data-content="1" data-order="1"></element>
+    <element data-content="2" data-order="2"></element>
+    <element data-content="3" data-order="3"></element>
+</ordered-container>
+
+<ordered-container>
+    <element data-content="1" data-order="2"></element>
+    <element data-content="2" data-order="3"></element>
+    <element data-content="3" data-order="1"></element>
+</ordered-container>
+
+Ordered transclude directive example with missing elements (missing elements e.g. 3 are simply ignored)
+<ordered-container>
+    <element data-content="1" data-order="1"></element>
+    <element data-content="2" data-order="2"></element>
+</ordered-container>
+
+Ordered transclude directive example with extra elements (extra elements e.g. 4 are simply ignored)
+<ordered-container>
+    <element data-content="1" data-order="1"></element>
+    <element data-content="2" data-order="2"></element>
+    <element data-content="3" data-order="3"></element>
+    <element data-content="4" data-order="4"></element>
+</ordered-container>
+
+Another ordered transclude directive examples (reusing transcludeOrderController)
+<ordered-container2>
+    <element data-content="1" data-order="1"></element>
+    <element data-content="2" data-order="2"></element>
+</ordered-container2>
+
+<ordered-container2>
+    <element data-content="1" data-order="2"></element>
+    <element data-content="3" data-order="1"></element>
+</ordered-container2>
+
 <script src="node_modules/angular/angular.js"></script>
-<script src="js/app.js"></script>
+<script src="js/transcludeOrderedApp.js"></script>
+<script src="js/controllers/transcludeOrderController.js"></script>
 <script src="js/directives/element.js"></script>
 <script src="js/directives/container.js"></script>
+<script src="js/directives/orderedContainer.js"></script>
+<script src="js/directives/orderedContainer2.js"></script>
 
 </body>
 </html>
