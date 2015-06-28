@@ -2,7 +2,7 @@
 
 The default behaviour of ng-transclude in AngularJS only allows to nest all the content together where ng-transclude is set on the template.
 
-There is no possibility to transclude different elements independently and order them as desired.
+There is no possibility to transclude different elements independently and order them inside the template as desired. If you want to do it, you have to set the order inside the declaration of the outter directive in the html and use a single ng-transclude.   
 
 This project tries to solve this problem by the use of an AngularJS controller (transcludeOrderController.js). This controller together with some definition of custom directives allows the use of multiple ordered nested directives.
 
